@@ -25,6 +25,7 @@ You only have to run server ($ ./server ). You can change de variables and add t
 ## How to use
 
 When server is running, with a web browser enter yourRaspberryIP:5555 and you can show all the information. Example:
+![rpMonitor](https://cloud.githubusercontent.com/assets/4716972/6081377/421a68ec-ae19-11e4-8b12-c003037b207b.png)
 
 ## Variables and more
 

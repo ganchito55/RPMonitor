@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Rpmonitor by ganchito55</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Rpmonitor</h1>
+        <h2>The lightest remote monitor for Raspberry Pi, written in C, with no dependencies and fully hackable and customizable.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/ganchito55/RPMonitor/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/ganchito55/RPMonitor/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/ganchito55/RPMonitor" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="rpmonitor" class="anchor" href="#rpmonitor" aria-hidden="true"><span class="octicon octicon-link"></span></a>RPMonitor</h1>
+
+<p>The lightest remote monitor for Raspberry Pi, written in C, with no dependencies and fully hackable and customizable.</p>
+
+<h2>
+<a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it works</h2>
+
+<p>The project has 3 files:</p>
+
+<ul>
+<li>the server.c file, with all code about create a TCP connection, and send the HTML code with the monitor values through Internet.</li>
+<li>the monitor.html with the user interface, it is fully customizable. The server reads this file and then it send it, but it replaces the variables by the results.</li>
+<li>the vars file with all variables and how to resolve them. It use the following format $var$'TAB'command</li>
+</ul>
+
+<p>Manage shell script is only for developers and people who want to change and test the server</p>
+
+<h2>
+<a id="how-to-build" class="anchor" href="#how-to-build" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to build</h2>
+
+<p>You need gcc and other developer tools. I will try to upload the last build for non developers.
+I think that if you have installed build-essential you won't need any dependencies more.</p>
+
+<p>Compile the file server.c</p>
+
+<p>$ gcc server.c -o server</p>
+
+<h2>
+<a id="how-to-install-and-configure" class="anchor" href="#how-to-install-and-configure" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to install and configure</h2>
+
+<p>You only have to run server ($ ./server ). You can change de variables and add the information that you want to monitor.</p>
+
+<h2>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<p>When server is running, with a web browser enter yourRaspberryIP:5555 and you can show all the information.
+Example:</p>
+
+<h2>
+<a id="variables-and-more" class="anchor" href="#variables-and-more" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables and more</h2>
+
+<p>I try do not use third party software because I think that the software should be run without other dependencies, so I hope that others will follow this advice. But this is only an advice.</p>
+
+<p>Help me to increase the vars file with all variables that you think that it would be interesting to monitor!!</p>
+
+<h2>
+<a id="thanks" class="anchor" href="#thanks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thanks</h2>
+
+<p>The code to create the server and manage a TCP connection was obtained from <a href="http://www.kumanov.com/docs/prog/Advanced%20Systems%20Programming%20And%20Real%20-%20Time%20Systems%20&amp;%20Real-%20Time%20Operating%20Systems%20And%20Device%20Programming/RTGIF031.HTM">here</a>
+I use <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> icons in the project 
+thanks so much</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>

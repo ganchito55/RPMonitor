@@ -34,6 +34,5 @@ Help me to increase the vars file with all variables that you think that it woul
 
 ## Thanks
 
-The code to create the server and manage a TCP connection was obtained from [he
-re](http://www.kumanov.com/docs/prog/Advanced%20Systems%20Programming%20And%20Real%20-%20Time%20Systems%20&%20Real-%20Time%20Operating%20Systems%20And%20Device%20Programming/RTGIF031.HTM)
+The code to create the server and manage a TCP connection was obtained from [here](http://www.kumanov.com/docs/prog/Advanced%20Systems%20Programming%20And%20Real%20-%20Time%20Systems%20&%20Real-%20Time%20Operating%20Systems%20And%20Device%20Programming/RTGIF031.HTM)
 Icons from [Font Awesome](http://fortawesome.github.io/Font-Awesome/)

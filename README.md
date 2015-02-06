@@ -17,17 +17,23 @@ You need gcc and other developer tools. I will try to upload the last build for 
 Compile the file server.c
 
 $ gcc server.c -o server
-How to install and configure
+
+## How to install and configure
 
 You only have to run server ($ ./server ). You can change de variables and add the information that you want to monitor.
-How to use
+
+## How to use
 
 When server is running, with a web browser enter yourRaspberryIP:5555 and you can show all the information. Example:
-Variables and more
+
+## Variables and more
 
 I try do not use third party software because I think that the software should be run without other dependencies, so I hope that others will follow this advice. But this is only an advice.
 
 Help me to increase the vars file with all variables that you think that it would be interesting to monitor!!
-Thanks
 
-The code to create the server and manage a TCP connection was obtained from here I use Font Awesome icons in the project thanks so much
+## Thanks
+
+The code to create the server and manage a TCP connection was obtained from [he
+re](http://www.kumanov.com/docs/prog/Advanced%20Systems%20Programming%20And%20Real%20-%20Time%20Systems%20&%20Real-%20Time%20Operating%20Systems%20And%20Device%20Programming/RTGIF031.HTM)
+Icons from [Font Awesome](http://fortawesome.github.io/Font-Awesome/)

@@ -1,0 +1,18 @@
+$temp$	/opt/vc/bin/vcgencmd measure_temp | cut -c 6-12
+$load$	cat /proc/loadavg | cut -d' ' -f1-3
+$totalRAM$	free -h -t | grep "Mem" | awk '{print $2"B"}'
+$usedRAM$	free -h -t | grep "buffers/cache" | awk '{print $3"B" }'
+$freeRAM$	free -h -t | grep "buffers/cache" | awk '{print $4"B" }'
+$uptime$	uptime | awk '{ print $3}' | cut -d',' -f1
+$netMBRecv$	cat /proc/net/dev | grep "eth0" | awk '{printf "%d%s", $2/(1024*1024),"MB"}'
+$netMBSend$	cat /proc/net/dev | grep "eth0" | awk '{printf "%d%s", $10/(1024*1024),"MB"}'
+$rootTotalStorage$	df -h | grep -e "/$" | awk 'NR>1{print $2"B"}'
+$rootUsedStorage$	df -h | grep -e "/$" | awk 'NR>1{print $3"B"}'
+$rootFreeStorage$	df -h | grep -e "/$" | awk 'NR>1{print $4"B"}'
+$sda1TotalStorage$	df -h | grep -e "^/dev/sda1" | awk '{print $2"B"}'
+$sda1UsedStorage$	df -h | grep -e "^/dev/sda1" | awk '{print $3"B"}'
+$sda1FreeStorage$	df -h | grep -e "^/dev/sda1" | awk '{print $4"B"}'
+$sda2TotalStorage$	df -h | grep -e "^/dev/sda2" | awk '{print $2"B"}'
+$sda2UsedStorage$	df -h | grep -e "^/dev/sda2" | awk '{print $3"B"}'
+$sda2FreeStorage$	df -h | grep -e "^/dev/sda2" | awk '{print $4"B"}'	
+						

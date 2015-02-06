@@ -1,0 +1,42 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+     .info{width: 40%;float: left;background-color: #fff;margin: 4%;padding: 1%}  
+    </style>
+		<title>RP Monitor</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+<body style="background-color:#F57C00;margin:-8 0 0 0">
+    <header style="background-color:#FF9800;color:#fff;padding:1">
+    <h1 style="text-align:center">Raspberry Pi Monitor</h1>
+    </header>
+    <main style="margin:8;color:#727272">
+        <div class="info">
+            <i class="fa fa-server fa-2x"></i> Temperatura $temp$
+        </div>
+        <div class="info">
+            <i class="fa fa-tasks fa-2x"></i> Carga $load$
+        </div>
+         <div class="info">
+          <i class="fa fa-sort-asc fa-2x"></i> Tiempo en línea $uptime$   
+        </div>
+	<div class="info">
+          <i class="fa fa-th-list fa-2x"></i> RAM disponible $freeRAM$/$totalRAM$   
+        </div>
+         <div class="info">
+          <i class="fa fa-upload fa-2x"></i> Subidos $netMBSend$   
+        </div>
+         <div class="info">
+          <i class="fa fa-download fa-2x"></i> Descargados $netMBRecv$   
+        </div>
+         <div class="info">
+          <i class="fa fa-hdd-o fa-2x"></i> EXT4 $sda2FreeStorage$/$sda2TotalStorage$   
+        </div>
+         <div class="info">
+          <i class="fa fa-hdd-o fa-2x"></i> NTFS $sda1FreeStorage$/$sda1TotalStorage$
+        </div>      
+    </main>    
+</body>
+</html>

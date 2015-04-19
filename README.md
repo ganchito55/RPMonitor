@@ -33,6 +33,10 @@ I try do not use third party software because I think that the software should b
 
 Help me to increase the vars file with all variables that you think that it would be interesting to monitor!!
 
+## Language
+
+By default monitor.html is in Spanish language, so if you want to use the English version you need to rename monitorEnglish.html to monitor.hmlt or to change in server.c the fopen function.
+
 ## Thanks
 
 The code to create the server and manage a TCP connection was obtained from [here](http://www.kumanov.com/docs/prog/Advanced%20Systems%20Programming%20And%20Real%20-%20Time%20Systems%20&%20Real-%20Time%20Operating%20Systems%20And%20Device%20Programming/RTGIF031.HTM)
